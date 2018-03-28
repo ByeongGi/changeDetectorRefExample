@@ -10,6 +10,8 @@ import { SupperGrandChildCmpComponent } from './supper-grand-child-cmp/supper-gr
 import { BtnEventControlComponent } from './btn-event-control/btn-event-control.component';
 import { WrappingComponent } from './wrapping/wrapping.component';
 import { WrappingBtnComponent } from './wrapping-btn/wrapping-btn.component';
+import { EventPropagationService } from './event-propagation.service';
+import { ColorChangeService } from './color-change.service';
 
 
 @NgModule({
@@ -26,7 +28,7 @@ import { WrappingBtnComponent } from './wrapping-btn/wrapping-btn.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [EventPropagationService, ColorChangeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
